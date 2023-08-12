@@ -1,12 +1,13 @@
 package FamalyTree.FamalyTree;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
 import FamalyTree.human.Gender;
 import FamalyTree.human.Human;
 
-public class FamalyTree {
+public class FamalyTree implements Serializable{
     private List<Human> humanList;
 
     public FamalyTree(List<Human> humanList){

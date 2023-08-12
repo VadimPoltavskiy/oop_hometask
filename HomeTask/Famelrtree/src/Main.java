@@ -3,6 +3,7 @@
 import FamalyTree.human.Fio;
 import FamalyTree.human.Gender;
 import FamalyTree.human.Human;
+import Writer.FileHandler;
 
 import java.time.LocalDate;
 
@@ -10,8 +11,19 @@ import FamalyTree.FamalyTree.FamalyTree;
 
 public class Main {
     public static void main(String[] args){
-        FamalyTree famalyTree = testSustem();
+        String filePach = "HomeTask/Famelrtree/src/FamalyTree/Data/famalyTree.out";
+ //       FileHandler fileHandler = new FileHandler();
+
+ //       FamalyTree famalyTree = testSustem();
+ //       System.out.println(famalyTree);
+
+ //       fileHandler.save(famalyTree, filePach);
+
+        FileHandler fileHandler = new FileHandler();
+        FamalyTree famalyTree = (FamalyTree) fileHandler.read(filePach);
         System.out.println(famalyTree);
+
+
     }
 
     static FamalyTree testSustem(){

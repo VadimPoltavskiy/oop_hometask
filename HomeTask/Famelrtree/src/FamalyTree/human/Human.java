@@ -1,5 +1,6 @@
 package FamalyTree.human;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.List;
 //import java.time.LocalDate;
 //import java.util.List;
 
-public class Human extends Fio {
+public class Human extends Fio  implements Serializable{
     private Gender gender;
     private LocalDate birthDay;
     private LocalDate dayOfDeath;
